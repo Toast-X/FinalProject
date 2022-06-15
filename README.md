@@ -1,1 +1,1 @@
-The final project of subject Internet Applications from university. Contains basic HTML and CSS and Java script code. Also contains basic responsive Design. The java script code is rensponsible for code validation, usage of local-storage, fetch-api and additional visual adjustments.
+The final project of subject Internet Applications from university. Contains basic HTML, CSS and Java script code. Also contains basic responsive Design. The java script code is rensponsible for code validation, usage of local-storage, fetch-api and additional visual adjustments.
