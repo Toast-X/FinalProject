@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>QWE-ASD blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;600&display=swap" rel="stylesheet">
+
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/article.css" rel="stylesheet" type="text/css" />
+    <script src="js/article.js"></script>
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">UP</button>
+    <header>
+        <a href="index.html" class="logo"><img src="img/logo/logo_transparent.png" alt="" /></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Articles</button>
+                    <div class="dropdown-content">
+                        <a class="active" href="article.html">Make article</a>
+                        <a href="my-articles.html">Submit articles</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Make your article now!</h1>
+        <section>
+            <div class="info">
+                <div>
+                    <label for="title"><b>Title</b></label>
+                    <input id = "title" type="text" placeholder="Enter title" name="title" required>
+                </div>
+                <div>
+                    <label for="descr"><b>Description</b></label>
+                    <input id="descr" type="text" placeholder="Enter description" name="descr" required>
+                </div>
+            </div>
+            <div class="article">
+                <label for="article"><b>Text</b></label>
+                <textarea id="article" name="article" maxlength="10000" required></textarea>
+            </div>
+            <div class="buttons">
+                <button id="submit" onclick='addArticle()'>Save article</button>
+            </div>
+            <div class="down-link-article">
+                <a href="my-articles.html">My articles</a>
+            </div>
+        </section>
+        <div id="article-saved">Successfully saved!</div>
+    </main>
+    <footer>
+        <p>Company © QWE-ASD All rights not reserved</p>
+    </footer>
+    <script src="js/scl-up-btn.js"></script>
+</body>
+
+</html>

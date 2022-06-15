@@ -1,0 +1,54 @@
+
+#social ul{
+    display: flex;
+    margin: 0 auto;
+    width: 300px;
+}
+#social ul li{
+    margin-right: 20px;
+}
+.side-section img{
+    height: 320px;
+}
+section ul li{
+    font-size: 25px;
+}
+.side-section{
+    display: flex;
+}
+.side-section ul{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.telefon-side-num{
+    margin-left: 30px;
+    width: 50%;
+}
+.side-img{
+    width: 50%;
+    border-radius: 25px;
+}
+main{
+    width:65%;
+}
+#write-img{
+    background-image: url(../img/other/writing.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#tel-img{
+    background-image: url(../img/other/teleffon.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 270px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section:nth-child(4){
+    margin-bottom: 0;
+}

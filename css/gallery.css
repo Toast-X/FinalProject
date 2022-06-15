@@ -1,0 +1,46 @@
+.parallax {
+  /* The image used */
+  background-image: url("../img/other/gallery-parallax.jpg");
+  /* Set a specific height */
+  min-height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caption{
+    width: 100%;
+    text-align: center;
+}
+.caption span.border {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+#galer-tab{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    gap: 10px 20px;
+}
+#galer-tab img{
+    height: 150px;
+    transition: transform .2s;
+}
+#galer-tab img:hover{
+    transform: scale(1.2);
+}

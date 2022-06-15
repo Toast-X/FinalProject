@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>QWE-ASD blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;600&display=swap" rel="stylesheet">
+
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/article.css" rel="stylesheet" type="text/css" />
+    <script src="js/article.js"></script>
+    <script src="js/validation.js"></script>
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body onload="showArticles()">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">UP</button>
+    <header>
+        <a href="index.html" class="logo"><img src="img/logo/logo_transparent.png" alt="" /></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Articles</button>
+                    <div class="dropdown-content">
+                        <a href="article.html">Make article</a>
+                        <a class="active" href="my-articles.html">Submit articles</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Submit articles!</h1>
+            <form method="post" action="" onsubmit="return sprawdz()">
+                <div>
+                    <label for="name"><b>Name</b></label>
+                    <input id="name" type="text" required>
+                    <div id="name_error"></div>
+                    <label for="surname"><b>Surname</b></label>
+                    <input id="surname" type="text" required>
+                    <div id="surname_error"></div>
+                    <label for="email"><b>Email</b></label>
+                    <input id="email" type="email" required>
+                    <div id="email_error"></div>
+                    <label for="tel"><b>Telefon</b></label>
+                    <input id="tel" type="tel" required>
+                    <div id="tel_error"></div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+        <h2>Your articles!</h2>
+        <section id="list">
+            
+        </section>
+        <div class="buttons">
+            <button id="delete-article" onclick='deleteList()'>Delete all articles</button>
+        </div>
+        <div id="to-left-link" class="down-link-article">
+            <a href="article.html">Back</a>
+        </div>
+    </main>
+    <footer>
+        <p>Company © QWE-ASD All rights not reserved</p>
+    </footer>
+    <script src="js/scl-up-btn.js"></script>
+</body>
+
+</html>
